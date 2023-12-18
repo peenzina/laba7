@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script>
+        function bgColo1r(){
+            var colorBG = document.getElementById("bg").value;
+            var root = document.documentElement;
+            root.style.backgroundColor = colorBG;
+        }
+        function txtColor(){
+            var txtcol = document.getElementById("txt").value;
+            var root = document.body;
+            root.style.color = txtcol;
+        }
+        function links1(){
+            var linkCh = document.querySelector('a.link');
+            var link = document.getElementById('linkChange').value;
+            linkCh.setAttribute('href', link);
+        }
+    </script>
+</head>
+<body>
+        <label>Введите цвет фона</label><br>
+        <input type = "text" id="bg">
+        <input type="button" onclick ="bgColo1r()" value="ок"><br><br>
+
+        <label id="font">Введите цвет текста</label><br>
+        <input type = "text" id = "txt">
+        <input type="button" onclick ="txtColor()" value="ок"><br><br>
+
+        <label>Введите ссылку</label><br>
+        <input type = "text" id="linkChange">
+        <input type="button" onclick ="links1()" value="ок">
+
+        <br><a href="https://vk.com/feed" class="link">Ссылка</a>
+</body>   
+</html>
+
+
